@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Agent Gitu</string>
+    <string name="cowork_title">Cowork</string>
+    <string name="nav_cowork">Cowork</string>
+    <string name="nav_coding">Coding</string>
+    <string name="nav_desktop">Desktop</string>
+    <string name="nav_settings">Settings</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_search">Search</string>
+    <string name="cd_new_thread">Start new Cowork thread</string>
+    <string name="cd_attach">Attach files or images</string>
+    <string name="cd_voice_msg">Voice message</string>
+    <string name="cd_send">Send message</string>
+</resources>

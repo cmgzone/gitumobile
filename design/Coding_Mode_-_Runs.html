@@ -1,0 +1,396 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Mode — Chat &amp; Sessions — Agent Gitu</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="7f092de4b39e417e===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'success': '#15803D',
+        'on-success': '#FFFFFF',
+        'success-container': '#DCFCE7',
+        'on-success-container': '#14532D',
+        'warning': '#B45309',
+        'on-warning': '#FFFFFF',
+        'warning-container': '#FEF3C7',
+        'on-warning-container': '#78350F',
+        'light-primary': '#0037B0',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#1D4ED8',
+        'light-on-primary-container': '#FFFFFF',
+        'light-secondary': '#4D5B94',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#E0E5FF',
+        'light-on-secondary-container': '#1D2C63',
+        'light-tertiary': '#7F2500',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#FFDBCF',
+        'light-on-tertiary-container': '#5C1900',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#FAF8FF',
+        'light-on-background': '#1A1B23',
+        'light-surface': '#FAF8FF',
+        'light-surface-dim': '#D9D9E5',
+        'light-surface-bright': '#FAF8FF',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F3F2FE',
+        'light-surface-container': '#EDEDF9',
+        'light-surface-container-high': '#E8E7F3',
+        'light-surface-container-highest': '#E2E1ED',
+        'light-on-surface': '#1A1B23',
+        'light-surface-variant': '#E0E1F4',
+        'light-on-surface-variant': '#434655',
+        'light-outline': '#747686',
+        'light-outline-variant': '#C4C5D7',
+        'light-inverse-surface': '#2E3039',
+        'light-inverse-on-surface': '#F0F0FB',
+        'light-inverse-primary': '#B7C4FF',
+        'dark-primary': '#B7C4FF',
+        'dark-on-primary': '#002682',
+        'dark-primary-container': '#1D4ED8',
+        'dark-on-primary-container': '#CAD3FF',
+        'dark-secondary': '#B7C4FF',
+        'dark-on-secondary': '#1D2C63',
+        'dark-secondary-container': '#35437B',
+        'dark-on-secondary-container': '#A4B2F1',
+        'dark-tertiary': '#FFB59C',
+        'dark-on-tertiary': '#5C1900',
+        'dark-tertiary-container': '#A73400',
+        'dark-on-tertiary-container': '#FFC9B7',
+        'dark-error': '#FFB4AB',
+        'dark-on-error': '#690005',
+        'dark-error-container': '#93000A',
+        'dark-on-error-container': '#FFDAD6',
+        'dark-background': '#11131B',
+        'dark-on-background': '#E2E1ED',
+        'dark-surface': '#11131B',
+        'dark-surface-dim': '#11131B',
+        'dark-surface-bright': '#373942',
+        'dark-surface-container-lowest': '#0C0E16',
+        'dark-surface-container-low': '#1A1B23',
+        'dark-surface-container': '#1E1F27',
+        'dark-surface-container-high': '#282932',
+        'dark-surface-container-highest': '#33343D',
+        'dark-on-surface': '#E2E1ED',
+        'dark-surface-variant': '#434655',
+        'dark-on-surface-variant': '#C4C5D7',
+        'dark-outline': '#8E90A0',
+        'dark-outline-variant': '#434655',
+        'dark-inverse-surface': '#E2E1ED',
+        'dark-inverse-on-surface': '#2E3039',
+        'dark-inverse-primary': '#2151DA',
+      },
+      borderRadius: {
+        'sm': '4px',
+        'DEFAULT': '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '12px',
+        'gutter-lg': '16px',
+        'gutter-xl': '24px',
+        'section': '24px',
+        'page-margin': '16px',
+      },
+      fontFamily: {
+        'display': ['"Red Hat Text"', 'sans-serif'],
+        'headline': ['"Red Hat Text"', 'sans-serif'],
+        'title': ['"Instrument Sans"', 'sans-serif'],
+        'body': ['"Instrument Sans"', 'sans-serif'],
+        'label': ['"Instrument Sans"', 'sans-serif'],
+        'mono': ['"Red Hat Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['40px', { lineHeight: '46px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['34px', { lineHeight: '40px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'headline-lg-mobile': ['22px', { lineHeight: '28px', letterSpacing: '-0.15px', fontWeight: '600' }],
+        'headline-sm': ['18px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-md': ['15px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'mono-sm': ['12px', { lineHeight: '16px', letterSpacing: '0px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '100ms',
+        'surface-enter': '220ms',
+        'surface-exit': '150ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;family=Red+Hat+Mono:wght@400;500&amp;family=Red+Hat+Text:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>.material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }</style>
+</head>
+<body class="bg-light-surface text-light-on-surface font-body antialiased">
+  <div class="relative min-h-screen flex flex-col max-w-md mx-auto bg-light-surface overflow-x-hidden">
+
+    <!-- Top Header with Sidebar Drawer Trigger & Agent/Chat Switch -->
+    <header class="sticky top-0 z-20 bg-light-surface border-b border-light-outline-variant px-page-margin py-gutter-md flex items-center justify-between gap-gutter-sm">
+      <div class="flex items-center gap-gutter-sm min-w-0">
+        <button id="open-sidebar-btn" type="button" aria-label="Open sessions and workspace sidebar" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-light-surface-container-low text-light-on-surface shrink-0 transition-colors duration-state-change ease-state-change hover:bg-light-surface-container">
+          <span class="material-symbols-outlined text-[20px]" aria-hidden="true">menu</span>
+        </button>
+
+        <div class="flex flex-col min-w-0">
+          <h1 class="font-headline text-title-md text-light-on-surface" data-design-text-token="title-md">agent-gitu</h1>
+          <span class="font-mono text-mono-sm text-light-primary" data-design-text-token="mono-sm">feat/mobile-fcm</span>
+        </div>
+      </div>
+
+      <!-- Agent / Chat Mode Pill -->
+      <div class="flex items-center rounded-full bg-light-surface-container-low p-gutter-xs shrink-0" role="group" aria-label="Coding mode">
+        <button type="button" aria-pressed="true" class="mode-pill rounded-full bg-light-primary text-light-on-primary px-gutter-md py-gutter-xs font-label text-label-sm" data-design-text-token="label-sm">Agent</button>
+        <button type="button" aria-pressed="false" class="mode-pill rounded-full text-light-on-surface-variant px-gutter-md py-gutter-xs font-label text-label-sm" data-design-text-token="label-sm">Chat</button>
+      </div>
+    </header>
+
+    <!-- Live Run State Strip -->
+    <div class="bg-light-surface-container-low border-b border-light-outline-variant px-page-margin py-gutter-sm flex items-center gap-gutter-sm overflow-x-auto">
+      <span class="inline-flex items-center gap-gutter-xs rounded-full bg-light-surface-container-lowest border border-light-outline-variant px-gutter-md py-gutter-xs font-mono text-mono-sm text-light-primary shrink-0" data-design-text-token="mono-sm">
+        <span class="w-2 h-2 rounded-full bg-light-primary" aria-hidden="true"></span>
+        <span>3/4 plan</span>
+      </span>
+      <span class="rounded-full bg-light-surface-container-lowest border border-light-outline-variant px-gutter-md py-gutter-xs font-mono text-mono-sm text-success shrink-0 tabular-nums" data-design-text-token="mono-sm">+142 / -28</span>
+      <span class="rounded-full bg-light-surface-container-lowest border border-light-outline-variant px-gutter-md py-gutter-xs font-mono text-mono-sm text-light-on-surface-variant shrink-0" data-design-text-token="mono-sm">PASS 18/18</span>
+      <button type="button" class="rounded-full bg-light-surface-container-lowest border border-light-outline-variant px-gutter-md py-gutter-xs font-mono text-mono-sm text-light-on-surface shrink-0" data-design-text-token="mono-sm">Browser</button>
+    </div>
+
+    <!-- Main Coding Chat & Run Stream -->
+    <main class="flex-1 px-page-margin py-gutter-lg flex flex-col gap-gutter-lg">
+
+      <!-- User Goal Prompt -->
+      <div class="flex justify-end">
+        <div class="max-w-[85%] rounded-xl rounded-br-sm bg-light-primary text-light-on-primary px-gutter-lg py-gutter-md flex flex-col gap-gutter-xs">
+          <p class="font-body text-body-md text-pretty" data-design-text-token="body-md">
+            Wire FCM token rotation on foreground and add deep-link routing for Cowork threads.
+          </p>
+          <span class="font-mono text-mono-sm opacity-90 text-right tabular-nums" data-design-text-token="mono-sm">13:58</span>
+        </div>
+      </div>
+
+      <!-- Autonomous Agent Response -->
+      <article class="flex flex-col gap-gutter-sm">
+        <div class="flex items-center justify-between gap-gutter-sm">
+          <div class="flex items-center gap-gutter-xs">
+            <span class="w-6 h-6 rounded-full bg-light-secondary-container text-light-on-secondary-container inline-flex items-center justify-center">
+              <span class="material-symbols-outlined text-[14px]" aria-hidden="true">code_blocks</span>
+            </span>
+            <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Coding Agent</span>
+            <span class="font-mono text-mono-sm text-light-on-surface-variant" data-design-text-token="mono-sm">claude-3-7</span>
+          </div>
+          <span class="font-mono text-mono-sm text-light-on-surface-variant tabular-nums" data-design-text-token="mono-sm">$0.42</span>
+        </div>
+
+        <!-- Collapsible Thought Summary -->
+        <button type="button" class="self-start inline-flex items-center gap-gutter-xs rounded-full bg-light-surface-container-low border border-light-outline-variant px-gutter-md py-gutter-xs text-light-on-surface-variant hover:bg-light-surface-container">
+          <span class="material-symbols-outlined text-[14px] text-light-primary" aria-hidden="true">psychology</span>
+          <span class="font-mono text-mono-sm" data-design-text-token="mono-sm">Reasoned 6s • 4 files inspected</span>
+          <span class="material-symbols-outlined text-[14px]" aria-hidden="true">expand_more</span>
+        </button>
+
+        <!-- Agent Message + Inline Live Browser + Evidence -->
+        <div class="rounded-xl bg-light-surface-container-lowest border border-light-outline-variant p-gutter-md flex flex-col gap-gutter-md">
+          <p class="font-body text-body-md text-light-on-surface text-pretty" data-design-text-token="body-md">
+            Updated <span class="font-mono text-mono-sm bg-light-surface-container-low px-gutter-xs rounded-sm">workspace-app.tsx</span> and opened the live browser to verify the OAuth login redirect.
+          </p>
+
+          <!-- Inline Live Web / Computer Verification Card -->
+          <div class="rounded-lg bg-light-surface-container-low border border-light-outline-variant overflow-hidden flex flex-col">
+            <div class="px-gutter-md py-gutter-xs flex items-center justify-between gap-gutter-sm border-b border-light-outline-variant">
+              <div class="flex items-center gap-gutter-xs min-w-0">
+                <span class="w-2 h-2 rounded-full bg-success shrink-0" aria-hidden="true"></span>
+                <span class="font-mono text-mono-sm text-light-on-surface" data-design-text-token="mono-sm">localhost:3000/login</span>
+              </div>
+              <div class="flex items-center gap-gutter-xs shrink-0">
+                <button type="button" aria-label="Reload live browser" class="inline-flex items-center justify-center w-7 h-7 rounded-full text-light-on-surface-variant hover:bg-light-surface-container">
+                  <span class="material-symbols-outlined text-[16px]" aria-hidden="true">refresh</span>
+                </button>
+                <button type="button" aria-label="Expand live browser" class="inline-flex items-center justify-center w-7 h-7 rounded-full text-light-on-surface-variant hover:bg-light-surface-container">
+                  <span class="material-symbols-outlined text-[16px]" aria-hidden="true">open_in_full</span>
+                </button>
+              </div>
+            </div>
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrDxKsvjm6WDtIbAHjAcTiTMuDa0xlwQkfeOI19VR4yCO304Yigmm86-KjjvJYRI0FRD0IYcSqHwdzJWTLRmq_4g2oWm99n_ycp-V9mKTjUbyNonFaF4COEIj4j2eh-HSrlnbE-P8pOqeGyyljWzJCfSkBXOc3oD_s6_0kukeljhvqO2XUkPoEiLRa_hLRdJByFXjBXswe46wVf22SJFJHXLPytQaj4PSv4Urm8T6ogPOUNFc3N1T8PiAOx7TkpcXw" alt="Live browser verification stream at localhost:3000/login" class="w-full aspect-video object-cover" data-stitch-original-src="9a27f20ac6b94e3a===../../images/xfce_desktop_preview.jpg">
+            <div class="px-gutter-md py-gutter-sm flex items-center justify-between gap-gutter-sm border-t border-light-outline-variant bg-light-surface-container-lowest">
+              <span class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">Testing OAuth callback...</span>
+              <button type="button" class="rounded-full bg-light-primary text-light-on-primary px-gutter-md py-gutter-xs font-label text-label-sm shrink-0 hover:bg-light-primary-container" data-design-text-token="label-sm">Take control</button>
+            </div>
+          </div>
+
+          <!-- Evidence & Checkpoints Box -->
+          <div class="rounded-lg bg-light-surface-container-low border border-light-outline-variant p-gutter-md flex flex-col gap-gutter-sm">
+            <div class="flex items-center justify-between gap-gutter-sm">
+              <span class="font-label text-label-sm text-light-on-surface" data-design-text-token="label-sm">Evidence log</span>
+              <span class="rounded-full bg-success-container text-on-success-container px-gutter-sm py-0 font-label text-label-sm" data-design-text-token="label-sm">PASS</span>
+            </div>
+            <p class="font-mono text-mono-sm text-light-on-surface-variant" data-design-text-token="mono-sm">$ npm test mobile-push (18/18)</p>
+            <div class="grid grid-cols-2 gap-gutter-sm pt-gutter-xs">
+              <button type="button" class="rounded-full bg-light-surface-container-lowest border border-light-outline-variant py-gutter-xs font-label text-label-sm text-light-on-surface text-center hover:bg-light-surface-container" data-design-text-token="label-sm">Checkpoints (3)</button>
+              <button type="button" class="rounded-full bg-light-error-container text-light-on-error-container py-gutter-xs font-label text-label-sm text-center" data-design-text-token="label-sm">Stop run</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- Docked Coding Composer -->
+    <section aria-label="Coding composer" class="sticky bottom-[68px] z-10 bg-light-surface-container-lowest border-t border-light-outline-variant px-page-margin py-gutter-sm flex flex-col gap-gutter-xs">
+      <div class="flex items-center justify-between gap-gutter-sm">
+        <span class="font-mono text-mono-sm text-light-on-surface-variant" data-design-text-token="mono-sm">Claude 3.7 • Effort: High</span>
+        <button type="button" class="font-label text-label-sm text-light-primary" data-design-text-token="label-sm">Steer run</button>
+      </div>
+      <div class="flex items-center gap-gutter-sm">
+        <button type="button" aria-label="Attach images or files" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-light-surface-container-low text-light-on-surface shrink-0 hover:bg-light-surface-container">
+          <span class="material-symbols-outlined text-[20px]" aria-hidden="true">attach_file</span>
+        </button>
+        <div class="flex-1 flex items-center rounded-full bg-light-surface-container-low border border-light-outline-variant px-gutter-md py-gutter-xs focus-within:border-light-primary">
+          <input type="text" aria-label="Steer or message coding agent" placeholder="Steer run or start a task..." class="w-full bg-transparent border-0 p-0 font-body text-body-md text-light-on-surface placeholder:text-light-on-surface-variant focus:ring-0">
+        </div>
+        <button type="button" aria-label="Send prompt" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-light-primary text-light-on-primary shrink-0 hover:bg-light-primary-container">
+          <span class="material-symbols-outlined text-[20px]" aria-hidden="true">arrow_upward</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Slide-Over Sessions & Features Sidebar Drawer -->
+    <aside id="coding-sidebar" aria-label="Sessions and workspace features" class="hidden fixed inset-0 z-30 flex">
+      <div class="w-[82%] max-w-xs bg-light-surface-container-lowest border-r border-light-outline-variant p-gutter-lg flex flex-col gap-gutter-lg shadow-lg">
+        <div class="flex items-center justify-between gap-gutter-sm">
+          <span class="font-headline text-headline-sm text-light-on-surface" data-design-text-token="headline-sm">Coding workspace</span>
+          <button id="close-sidebar-btn" type="button" aria-label="Close sidebar" class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-light-surface-container-low text-light-on-surface">
+            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">close</span>
+          </button>
+        </div>
+
+        <!-- Workspace Features Grid -->
+        <div class="grid grid-cols-2 gap-gutter-sm">
+          <button type="button" class="rounded-md bg-light-surface-container-low p-gutter-sm flex items-center gap-gutter-xs text-left">
+            <span class="material-symbols-outlined text-[18px] text-light-primary" aria-hidden="true">folder_open</span>
+            <span class="font-label text-label-sm text-light-on-surface" data-design-text-token="label-sm">Files</span>
+          </button>
+          <button type="button" class="rounded-md bg-light-surface-container-low p-gutter-sm flex items-center gap-gutter-xs text-left">
+            <span class="material-symbols-outlined text-[18px] text-light-primary" aria-hidden="true">commit</span>
+            <span class="font-label text-label-sm text-light-on-surface" data-design-text-token="label-sm">Git diff</span>
+          </button>
+          <button type="button" class="rounded-md bg-light-surface-container-low p-gutter-sm flex items-center gap-gutter-xs text-left">
+            <span class="material-symbols-outlined text-[18px] text-light-primary" aria-hidden="true">language</span>
+            <span class="font-label text-label-sm text-light-on-surface" data-design-text-token="label-sm">Browser</span>
+          </button>
+          <button type="button" class="rounded-md bg-light-surface-container-low p-gutter-sm flex items-center gap-gutter-xs text-left">
+            <span class="material-symbols-outlined text-[18px] text-light-primary" aria-hidden="true">schedule</span>
+            <span class="font-label text-label-sm text-light-on-surface" data-design-text-token="label-sm">Cron</span>
+          </button>
+        </div>
+
+        <!-- Other Sessions -->
+        <div class="flex flex-col gap-gutter-sm">
+          <div class="flex items-center justify-between">
+            <span class="font-label text-label-sm text-light-on-surface-variant" data-design-text-token="label-sm">Sessions</span>
+            <button type="button" class="font-label text-label-sm text-light-primary" data-design-text-token="label-sm">+ New</button>
+          </div>
+          <a href="#s1" class="rounded-md bg-light-secondary-container text-light-on-secondary-container p-gutter-sm flex flex-col gap-gutter-xs">
+            <span class="font-label text-label-sm" data-design-text-token="label-sm">FCM token rotation</span>
+            <span class="font-mono text-mono-sm" data-design-text-token="mono-sm">Running • 3/4</span>
+          </a>
+          <a href="#s2" class="rounded-md bg-light-surface-container-low text-light-on-surface p-gutter-sm flex flex-col gap-gutter-xs">
+            <span class="font-label text-label-sm" data-design-text-token="label-sm">Cursor events API</span>
+            <span class="font-mono text-mono-sm text-light-on-surface-variant" data-design-text-token="mono-sm">Done • 12m ago</span>
+          </a>
+          <a href="#s3" class="rounded-md bg-light-surface-container-low text-light-on-surface p-gutter-sm flex flex-col gap-gutter-xs">
+            <span class="font-label text-label-sm" data-design-text-token="label-sm">QR pairing handler</span>
+            <span class="font-mono text-mono-sm text-light-on-surface-variant" data-design-text-token="mono-sm">Done • 1h ago</span>
+          </a>
+        </div>
+      </div>
+      <div id="sidebar-backdrop" class="flex-1 bg-light-on-surface/30"></div>
+    </aside>
+
+    <!-- Sticky Bottom Navigation (Coding Active) -->
+    <nav aria-label="Primary modes" class="sticky bottom-0 z-20 bg-light-surface-container-lowest border-t border-light-outline-variant px-gutter-sm py-gutter-sm grid grid-cols-4 gap-gutter-xs">
+      <a href="#cowork" class="flex flex-col items-center justify-center gap-gutter-xs py-gutter-xs text-light-on-surface-variant hover:text-light-on-surface">
+        <span class="inline-flex items-center justify-center rounded-full px-gutter-md py-gutter-xs">
+          <span class="material-symbols-outlined text-[20px]" aria-hidden="true">forum</span>
+        </span>
+        <span class="font-label text-label-sm" data-design-text-token="label-sm">Cowork</span>
+      </a>
+      <a href="#coding" aria-current="page" class="flex flex-col items-center justify-center gap-gutter-xs py-gutter-xs text-light-primary">
+        <span class="inline-flex items-center justify-center rounded-full bg-light-secondary-container text-light-primary px-gutter-md py-gutter-xs">
+          <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">code_blocks</span>
+        </span>
+        <span class="font-label text-label-sm" data-design-text-token="label-sm">Coding</span>
+      </a>
+      <a href="#desktop" class="flex flex-col items-center justify-center gap-gutter-xs py-gutter-xs text-light-on-surface-variant hover:text-light-on-surface">
+        <span class="inline-flex items-center justify-center rounded-full px-gutter-md py-gutter-xs">
+          <span class="material-symbols-outlined text-[20px]" aria-hidden="true">devices</span>
+        </span>
+        <span class="font-label text-label-sm" data-design-text-token="label-sm">Desktop</span>
+      </a>
+      <a href="#settings" class="flex flex-col items-center justify-center gap-gutter-xs py-gutter-xs text-light-on-surface-variant hover:text-light-on-surface">
+        <span class="inline-flex items-center justify-center rounded-full px-gutter-md py-gutter-xs">
+          <span class="material-symbols-outlined text-[20px]" aria-hidden="true">instant_mix</span>
+        </span>
+        <span class="font-label text-label-sm" data-design-text-token="label-sm">Settings</span>
+      </a>
+    </nav>
+
+  </div>
+
+  <script>
+    (function () {
+      const openBtn = document.getElementById('open-sidebar-btn');
+      const closeBtn = document.getElementById('close-sidebar-btn');
+      const backdrop = document.getElementById('sidebar-backdrop');
+      const sidebar = document.getElementById('coding-sidebar');
+      if (openBtn && sidebar) {
+        openBtn.addEventListener('click', () => sidebar.classList.remove('hidden'));
+      }
+      [closeBtn, backdrop].forEach((el) => {
+        if (el && sidebar) el.addEventListener('click', () => sidebar.classList.add('hidden'));
+      });
+
+      const pills = document.querySelectorAll('.mode-pill');
+      pills.forEach((pill) => {
+        pill.addEventListener('click', () => {
+          pills.forEach((p) => {
+            const active = p === pill;
+            p.setAttribute('aria-pressed', active ? 'true' : 'false');
+            p.className = active
+              ? 'mode-pill rounded-full bg-light-primary text-light-on-primary px-gutter-md py-gutter-xs font-label text-label-sm'
+              : 'mode-pill rounded-full text-light-on-surface-variant px-gutter-md py-gutter-xs font-label text-label-sm';
+          });
+        });
+      });
+    })();
+  </script>
+
+
+</body></html>

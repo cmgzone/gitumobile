@@ -1,0 +1,324 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local PC Link — Agent Gitu</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="7f092de4b39e417e===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'success': '#15803D',
+        'on-success': '#FFFFFF',
+        'success-container': '#DCFCE7',
+        'on-success-container': '#14532D',
+        'warning': '#B45309',
+        'on-warning': '#FFFFFF',
+        'warning-container': '#FEF3C7',
+        'on-warning-container': '#78350F',
+        'light-primary': '#0037B0',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#1D4ED8',
+        'light-on-primary-container': '#FFFFFF',
+        'light-secondary': '#4D5B94',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#E0E5FF',
+        'light-on-secondary-container': '#1D2C63',
+        'light-tertiary': '#7F2500',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#FFDBCF',
+        'light-on-tertiary-container': '#5C1900',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#FAF8FF',
+        'light-on-background': '#1A1B23',
+        'light-surface': '#FAF8FF',
+        'light-surface-dim': '#D9D9E5',
+        'light-surface-bright': '#FAF8FF',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F3F2FE',
+        'light-surface-container': '#EDEDF9',
+        'light-surface-container-high': '#E8E7F3',
+        'light-surface-container-highest': '#E2E1ED',
+        'light-on-surface': '#1A1B23',
+        'light-surface-variant': '#E0E1F4',
+        'light-on-surface-variant': '#434655',
+        'light-outline': '#747686',
+        'light-outline-variant': '#C4C5D7',
+        'light-inverse-surface': '#2E3039',
+        'light-inverse-on-surface': '#F0F0FB',
+        'light-inverse-primary': '#B7C4FF',
+        'dark-primary': '#B7C4FF',
+        'dark-on-primary': '#002682',
+        'dark-primary-container': '#1D4ED8',
+        'dark-on-primary-container': '#CAD3FF',
+        'dark-secondary': '#B7C4FF',
+        'dark-on-secondary': '#1D2C63',
+        'dark-secondary-container': '#35437B',
+        'dark-on-secondary-container': '#A4B2F1',
+        'dark-tertiary': '#FFB59C',
+        'dark-on-tertiary': '#5C1900',
+        'dark-tertiary-container': '#A73400',
+        'dark-on-tertiary-container': '#FFC9B7',
+        'dark-error': '#FFB4AB',
+        'dark-on-error': '#690005',
+        'dark-error-container': '#93000A',
+        'dark-on-error-container': '#FFDAD6',
+        'dark-background': '#11131B',
+        'dark-on-background': '#E2E1ED',
+        'dark-surface': '#11131B',
+        'dark-surface-dim': '#11131B',
+        'dark-surface-bright': '#373942',
+        'dark-surface-container-lowest': '#0C0E16',
+        'dark-surface-container-low': '#1A1B23',
+        'dark-surface-container': '#1E1F27',
+        'dark-surface-container-high': '#282932',
+        'dark-surface-container-highest': '#33343D',
+        'dark-on-surface': '#E2E1ED',
+        'dark-surface-variant': '#434655',
+        'dark-on-surface-variant': '#C4C5D7',
+        'dark-outline': '#8E90A0',
+        'dark-outline-variant': '#434655',
+        'dark-inverse-surface': '#E2E1ED',
+        'dark-inverse-on-surface': '#2E3039',
+        'dark-inverse-primary': '#2151DA',
+      },
+      borderRadius: {
+        'sm': '4px',
+        'DEFAULT': '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '12px',
+        'gutter-lg': '16px',
+        'gutter-xl': '24px',
+        'section': '24px',
+        'page-margin': '16px',
+      },
+      fontFamily: {
+        'display': ['"Red Hat Text"', 'sans-serif'],
+        'headline': ['"Red Hat Text"', 'sans-serif'],
+        'title': ['"Instrument Sans"', 'sans-serif'],
+        'body': ['"Instrument Sans"', 'sans-serif'],
+        'label': ['"Instrument Sans"', 'sans-serif'],
+        'mono': ['"Red Hat Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['40px', { lineHeight: '46px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['34px', { lineHeight: '40px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'headline-lg-mobile': ['22px', { lineHeight: '28px', letterSpacing: '-0.15px', fontWeight: '600' }],
+        'headline-sm': ['18px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-md': ['15px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'mono-sm': ['12px', { lineHeight: '16px', letterSpacing: '0px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '100ms',
+        'surface-enter': '220ms',
+        'surface-exit': '150ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;family=Red+Hat+Mono:wght@400;500&amp;family=Red+Hat+Text:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>.material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }</style>
+</head>
+<body class="bg-light-surface text-light-on-surface font-body antialiased">
+  <div class="min-h-screen flex flex-col max-w-md mx-auto bg-light-surface">
+
+    <!-- Contextual Header -->
+    <header class="sticky top-0 z-20 bg-light-surface border-b border-light-outline-variant px-page-margin py-gutter-md flex items-center justify-between gap-gutter-sm">
+      <div class="flex items-center gap-gutter-sm min-w-0">
+        <button type="button" aria-label="Back to Settings" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-light-surface-container-low text-light-on-surface hover:bg-light-surface-container shrink-0">
+          <span class="material-symbols-outlined text-[20px]" aria-hidden="true">arrow_back</span>
+        </button>
+        <div class="flex flex-col min-w-0">
+          <h1 class="font-headline text-title-md text-light-on-surface" data-design-text-token="title-md">Local PC Link</h1>
+          <span class="font-mono text-mono-sm text-light-on-surface-variant" data-design-text-token="mono-sm">Workstation bridge</span>
+        </div>
+      </div>
+
+      <button type="button" class="inline-flex items-center gap-gutter-xs rounded-full bg-light-primary text-light-on-primary px-gutter-md py-gutter-sm font-label text-label-sm hover:bg-light-primary-container shrink-0" data-design-text-token="label-sm">
+        <span class="material-symbols-outlined text-[16px]" aria-hidden="true">add_link</span>
+        <span>Pair PC</span>
+      </button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 px-page-margin py-gutter-lg flex flex-col gap-gutter-xl">
+
+      <!-- Paired Peer Status Card -->
+      <section aria-label="Paired workstation" class="rounded-lg bg-light-surface-container-lowest border border-light-outline-variant p-gutter-lg flex flex-col gap-gutter-md">
+        <div class="flex items-start justify-between gap-gutter-sm">
+          <div class="flex items-center gap-gutter-md min-w-0">
+            <div class="w-10 h-10 rounded-md bg-light-secondary-container text-light-primary flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[20px]" aria-hidden="true">laptop_mac</span>
+            </div>
+            <div class="flex flex-col gap-gutter-xs min-w-0">
+              <span class="font-title text-title-md text-light-on-surface" data-design-text-token="title-md">MacBook-Pro-Local</span>
+              <span class="font-mono text-mono-sm text-light-on-surface-variant tabular-nums" data-design-text-token="mono-sm">WebSocket • 12ms</span>
+            </div>
+          </div>
+          <span class="rounded-full bg-success-container text-on-success-container px-gutter-sm py-0 font-label text-label-sm shrink-0" data-design-text-token="label-sm">Connected</span>
+        </div>
+
+        <div class="grid grid-cols-2 gap-gutter-sm">
+          <button type="button" class="inline-flex items-center justify-center gap-gutter-xs rounded-full bg-light-surface-container-low text-light-on-surface py-gutter-sm font-label text-label-sm hover:bg-light-surface-container" data-design-text-token="label-sm">
+            <span class="material-symbols-outlined text-[16px]" aria-hidden="true">network_check</span>
+            <span>Test link</span>
+          </button>
+          <button type="button" class="inline-flex items-center justify-center gap-gutter-xs rounded-full bg-light-error-container text-light-on-error-container py-gutter-sm font-label text-label-sm" data-design-text-token="label-sm">
+            <span class="material-symbols-outlined text-[16px]" aria-hidden="true">link_off</span>
+            <span>Revoke</span>
+          </button>
+        </div>
+
+        <!-- One-Time Pairing Code -->
+        <div class="rounded-md bg-light-surface-container-low p-gutter-md flex items-center justify-between gap-gutter-sm">
+          <div class="flex flex-col gap-gutter-xs min-w-0">
+            <span class="font-label text-label-sm text-light-on-surface-variant" data-design-text-token="label-sm">One-time pairing code</span>
+            <span class="font-mono text-mono-sm text-light-on-surface tabular-nums" data-design-text-token="mono-sm">PAIR-7F92</span>
+          </div>
+          <button type="button" class="inline-flex items-center gap-gutter-xs rounded-full bg-light-surface-container-lowest border border-light-outline-variant px-gutter-md py-gutter-xs font-label text-label-sm text-light-on-surface hover:bg-light-surface-container shrink-0" data-design-text-token="label-sm">
+            <span class="material-symbols-outlined text-[16px]" aria-hidden="true">content_copy</span>
+            <span>Copy</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Granular Local Policy Controls -->
+      <section aria-label="Local policy controls" class="flex flex-col gap-gutter-sm">
+        <div class="flex items-center justify-between gap-gutter-sm">
+          <h2 class="font-title text-title-md text-light-on-surface" data-design-text-token="title-md">Local policy controls</h2>
+          <span class="font-mono text-mono-sm text-light-on-surface-variant tabular-nums" data-design-text-token="mono-sm">4 of 5 active</span>
+        </div>
+
+        <div class="grid grid-cols-2 gap-gutter-sm items-stretch">
+          <label class="h-full rounded-lg bg-light-surface-container-lowest border border-light-outline-variant p-gutter-md flex flex-col justify-between gap-gutter-md cursor-pointer hover:bg-light-surface-container-low">
+            <div class="flex items-center justify-between gap-gutter-sm">
+              <span class="material-symbols-outlined text-[20px] text-light-primary" aria-hidden="true">folder_open</span>
+              <input type="checkbox" checked aria-label="Allow Read files" class="h-5 w-5 rounded text-light-primary border-light-outline-variant focus:ring-light-primary">
+            </div>
+            <div class="flex flex-col gap-gutter-xs">
+              <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Read files</span>
+              <span class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">Inspect shared dirs</span>
+            </div>
+          </label>
+
+          <label class="h-full rounded-lg bg-light-surface-container-lowest border border-light-outline-variant p-gutter-md flex flex-col justify-between gap-gutter-md cursor-pointer hover:bg-light-surface-container-low">
+            <div class="flex items-center justify-between gap-gutter-sm">
+              <span class="material-symbols-outlined text-[20px] text-light-primary" aria-hidden="true">edit_document</span>
+              <input type="checkbox" checked aria-label="Allow Write files" class="h-5 w-5 rounded text-light-primary border-light-outline-variant focus:ring-light-primary">
+            </div>
+            <div class="flex flex-col gap-gutter-xs">
+              <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Write files</span>
+              <span class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">Apply local patches</span>
+            </div>
+          </label>
+
+          <label class="h-full rounded-lg bg-light-surface-container-lowest border border-light-outline-variant p-gutter-md flex flex-col justify-between gap-gutter-md cursor-pointer hover:bg-light-surface-container-low">
+            <div class="flex items-center justify-between gap-gutter-sm">
+              <span class="material-symbols-outlined text-[20px] text-light-on-surface-variant" aria-hidden="true">terminal</span>
+              <input type="checkbox" aria-label="Allow Run commands" class="h-5 w-5 rounded text-light-primary border-light-outline-variant focus:ring-light-primary">
+            </div>
+            <div class="flex flex-col gap-gutter-xs">
+              <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Run commands</span>
+              <span class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">Ask before shell</span>
+            </div>
+          </label>
+
+          <label class="h-full rounded-lg bg-light-surface-container-lowest border border-light-outline-variant p-gutter-md flex flex-col justify-between gap-gutter-md cursor-pointer hover:bg-light-surface-container-low">
+            <div class="flex items-center justify-between gap-gutter-sm">
+              <span class="material-symbols-outlined text-[20px] text-light-primary" aria-hidden="true">open_in_browser</span>
+              <input type="checkbox" checked aria-label="Allow Open URLs" class="h-5 w-5 rounded text-light-primary border-light-outline-variant focus:ring-light-primary">
+            </div>
+            <div class="flex flex-col gap-gutter-xs">
+              <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Open URLs</span>
+              <span class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">Launch local tabs</span>
+            </div>
+          </label>
+
+          <label class="col-span-2 rounded-lg bg-light-surface-container-lowest border border-light-outline-variant p-gutter-md flex items-center justify-between gap-gutter-md cursor-pointer hover:bg-light-surface-container-low">
+            <div class="flex items-center gap-gutter-md min-w-0">
+              <span class="material-symbols-outlined text-[20px] text-light-primary shrink-0" aria-hidden="true">chat</span>
+              <div class="flex flex-col gap-gutter-xs min-w-0">
+                <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Agent chat</span>
+                <span class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">Relay messages from local CLI session</span>
+              </div>
+            </div>
+            <input type="checkbox" checked aria-label="Allow Agent chat" class="h-5 w-5 rounded text-light-primary border-light-outline-variant focus:ring-light-primary shrink-0">
+          </label>
+        </div>
+      </section>
+
+      <!-- Shared Local Folders Allowlist -->
+      <section aria-label="Shared local folders" class="flex flex-col gap-gutter-sm">
+        <div class="flex items-center justify-between gap-gutter-sm">
+          <h2 class="font-title text-title-md text-light-on-surface" data-design-text-token="title-md">Shared local folders</h2>
+          <button type="button" class="inline-flex items-center gap-gutter-xs rounded-full bg-light-surface-container-low border border-light-outline-variant px-gutter-md py-gutter-xs font-label text-label-sm text-light-on-surface hover:bg-light-surface-container" data-design-text-token="label-sm">
+            <span class="material-symbols-outlined text-[16px]" aria-hidden="true">create_new_folder</span>
+            <span>Add folder</span>
+          </button>
+        </div>
+
+        <div class="flex flex-col gap-gutter-sm">
+          <article class="rounded-lg bg-light-surface-container-lowest border border-light-outline-variant p-gutter-md flex items-center justify-between gap-gutter-md">
+            <div class="flex items-center gap-gutter-md min-w-0">
+              <span class="material-symbols-outlined text-[20px] text-light-primary shrink-0" aria-hidden="true">folder</span>
+              <div class="flex flex-col gap-gutter-xs min-w-0">
+                <span class="font-mono text-mono-sm text-light-on-surface" data-design-text-token="mono-sm">~/Projects/agent-gitu</span>
+                <span class="font-body text-body-sm text-light-on-surface-variant tabular-nums" data-design-text-token="body-sm">Read &amp; Write • 142 files</span>
+              </div>
+            </div>
+            <button type="button" aria-label="Remove agent-gitu folder" class="inline-flex items-center justify-center w-8 h-8 rounded-full text-light-on-surface-variant hover:bg-light-surface-container shrink-0">
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">close</span>
+            </button>
+          </article>
+
+          <article class="rounded-lg bg-light-surface-container-lowest border border-light-outline-variant p-gutter-md flex items-center justify-between gap-gutter-md">
+            <div class="flex items-center gap-gutter-md min-w-0">
+              <span class="material-symbols-outlined text-[20px] text-light-primary shrink-0" aria-hidden="true">folder</span>
+              <div class="flex flex-col gap-gutter-xs min-w-0">
+                <span class="font-mono text-mono-sm text-light-on-surface" data-design-text-token="mono-sm">~/Documents/specs</span>
+                <span class="font-body text-body-sm text-light-on-surface-variant tabular-nums" data-design-text-token="body-sm">Read-only • 18 files</span>
+              </div>
+            </div>
+            <button type="button" aria-label="Remove specs folder" class="inline-flex items-center justify-center w-8 h-8 rounded-full text-light-on-surface-variant hover:bg-light-surface-container shrink-0">
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">close</span>
+            </button>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+
+</body></html>

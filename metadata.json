@@ -1,0 +1,6 @@
+{
+  "name": "Agent Gitu",
+  "description": "Mobile AI teammate coworking, autonomous coding run steering, live remote desktop, and governance control.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
